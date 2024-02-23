@@ -1,5 +1,5 @@
 //elements
-const lsitMail = ['mariorossi@gmail.com', 'c', 'valerossi46@gmail.com'];
+const lsitMail = ['mariorossi@gmail.com', 'valerossi46@gmail.com', 'baipass'];
 let userNumber = '';
 let pcNumber = '';
 
@@ -88,10 +88,12 @@ generateNumber.addEventListener('click',function(){
   if(userNumber > pcNumber){
     userNumOutput.classList.remove('bg-white');
     userNumOutput.classList.remove('bg-danger');
+    userNumOutput.classList.remove('bg-warning');
     userNumOutput.classList.add('bg-success');
     userNumOutput.classList.add('text-white');
     pcNumOutput.classList.remove('text-white');
     pcNumOutput.classList.remove('bg-white');
+    pcNumOutput.classList.remove('bg-warning');
     pcNumOutput.classList.add('bg-danger');
     pcNumOutput.classList.remove('bg-success');
 
@@ -102,10 +104,12 @@ generateNumber.addEventListener('click',function(){
   }else if(userNumber < pcNumber){
     pcNumOutput.classList.remove('bg-white');
     pcNumOutput.classList.remove('bg-danger');
+    pcNumOutput.classList.remove('bg-warning');
     pcNumOutput.classList.add('bg-success');
     pcNumOutput.classList.add('text-white');
     userNumOutput.classList.remove('text-white');
     userNumOutput.classList.remove('bg-white');
+    userNumOutput.classList.remove('bg-warning');
     userNumOutput.classList.add('bg-danger');
     userNumOutput.classList.remove('bg-success');
 
