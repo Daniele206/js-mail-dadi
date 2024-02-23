@@ -31,5 +31,5 @@ Se dobbiamo confrontare qualcosa che “cosa” ci serve?
 3. Verificare se la sua mail é nella lista delle maiil che hanno l'accesso.
 4. Negare l'accesso se la mail non é nella lista (con relativo messaggio a schermo); Far accedere l'utente se la mail é nella lista (con relativo messaggio a schermo).
 5. Se l'utente ha laccesso parte il gioco dei dadi.
-6. Andiamo a creare un generatore di nuemri casuali da 1 a 6 che al primo click generi il numero per l'utente e al secondo click generi il numero per il pc.
+6. Andiamo a creare un generatore che assegna due numeri differenti da 1 a 6 uno al giocatore e uno al pc.
 7. Verificare quale dei due numeri é piú grande per assegnare la vittoria al giocatore o al pc (con apposito messaggio a schermo).
