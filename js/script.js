@@ -4,6 +4,7 @@ const lsitMail = ['mariorossi@gmail.com', 'c', 'valerossi46@gmail.com'];
 //button
 const playGameButton = document.querySelector('.play-btn')
 const backLoginButton = document.querySelector('.back-btn')
+const generateNumber = document.querySelector('.genrate-number')
 
 //output
 const diceGame = document.getElementById('dice-game')
@@ -64,4 +65,12 @@ backLoginButton.addEventListener('click',function(){
   diceGame.classList.add('d-none');
   title.classList.add('d-none');
   location.reload();
+})
+
+generateNumber.addEventListener('click',function(){
+  const userNumber = Math.ceil(Math.random() * 6)
+  console.log(userNumber);
+
+  const pcNumber = Math.ceil(Math.random() * 6)
+  console.log(pcNumber);
 })
