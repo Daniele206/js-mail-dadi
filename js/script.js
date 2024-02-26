@@ -12,7 +12,7 @@ const generateNumber = document.querySelector('.genrate-number');
 const diceGame = document.getElementById('dice-game');
 const userNumOutput = document.querySelector('.user-num-output');
 const pcNumOutput = document.querySelector('.pc-num-output');
-const result = document.getElementById('result')
+const result = document.getElementById('result');
 
 //---------------------------------------------------
 
@@ -20,10 +20,13 @@ const userMail = prompt('Inserisci la tua mail:');
 
 let mailValid = ' ';
 
-if((userMail === lsitMail[0]) || (userMail === lsitMail[1]) || (userMail === lsitMail[2])){
-  mailValid = 'yes';
-}else{
-  mailValid = 'not';
+for(let i = 0; i < lsitMail.length; i++){
+  const iemail =lsitMail[i];
+  if(iemail === userMail){
+    mailValid = 'yes';
+  }else{
+    mailValid = 'not';
+  }
 }
 
 console.log(mailValid);
